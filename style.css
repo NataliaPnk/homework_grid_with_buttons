@@ -1,201 +1,255 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-.header {
-width: 1512px;
-height: 100px;
-background-color: #FFFFFF;
-position: sticky;
+header {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: 100px;
+  background-color: #ffffff;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.wrapper {
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
-padding: 20px;
+.wrapper-header {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+}
+
+.logo-text {
+  color: #005fa3;
+  font-size: 36px;
+  font-family: "Merriweather";
+  font-weight: 900;
 }
 
 a {
-  padding-left: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Lato";
+  font-size: 14px;
 }
 
-.Logo {
-font-size: larger;
-color: #005FA3;
-display: inline-block;
-display: flex;
-flex-direction: row;
-align-content: space-around;
-align-items: center;
-margin-left: 130px;
-margin-right: 70px;
+.button-header {
+  color: #000000;
+  text-transform: uppercase;
+  width: 170px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  border: 2px solid;
 }
 
-a {
-color: #000000;
-font-size: 23px;
-font-style: normal;
-font-family: 'Lato';
-text-decoration: none;
-padding: 15px;
+.wrapper-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.contact_btn {
-width: 100px;
-height: 35px;
-border: solid;
-border-radius: 30px;
-margin-right: 180px;
-margin-left: 60px;
-font-family: 'Lato';
+/* <!-- SECTION FIRST--> */
+
+.container-our-services {
+  background-color: #ebebeb;
+  width: 100%;
+  height: 1200px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
 }
 
-.Gallery {
-background-color: rgb(239, 235, 235);
+.wrapper-our-services-items {
+  width: 65%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
-.Titles {
-position: relative;
-padding-left: 145px; 
-padding-top: 150px;
-padding-bottom: 30px;
-font-family: 'Merriweather';
-color:#333333;
+.Titles-our-services {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-right: 500px;
+  margin: 90px;
 }
 
-h2 {
-color: white;
-display: flex;
-justify-content: start;
-padding-left: 20px;
+.small-title-our-services {
+  font-family: "Lato";
+  font-size: 24px;
+  color: #bdbdbd;
+  margin-bottom: 30px;
 }
 
-.About_us {
-background-color: white;
+.big-title-our-services {
+  font-family: "Merriweather";
+  color: #333333;
+  font-size: 48px;
 }
 
-.box {
-background-image: url('img-box.jpg');
-background-repeat: repeat;
-background-size: cover;
-width: 300px;
-height: 300px;
-margin: 15px;
-box-shadow: 0px 4px 8px rgba(6, 3, 3, 0.1);
-position: relative;
-display: block;
+.img-item {
+  position: relative;
+  display: inline-block;
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-.boxes {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
+.img-item:hover {
+  background: #005fa3a6;
+  opacity: 30%;
 }
 
-.box:hover {
-background: #005FA3;
-opacity: 30%;
+.img-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
-h2 {
-padding-left: 50px;
-padding-top: 40px;
+.content-item {
+  position: absolute;
+  z-index: 2;
 }
 
-.text_box {
-font-family: 'Lato';
+img {
+  width: 350px;
+  height: 360px;
 }
 
-.button-box {
-position: absolute;
-bottom: 20px;
-right: 55%;
-padding: 3px 25px;
-border: solid;
-border-radius: 20px;
-color: white;
-margin-left: 100px;
+.title-img {
+  font-family: "Lato";
+  font-size: 24px;
+  color: #ffffff;
+  padding-top: 50px;
+  padding-left: 40px;
 }
 
-.small_title_about_us {
-color: #BDBDBD;
-font-size: 18px;
-margin-left: 50px;
-margin-top: 80px;
-font-family: 'Lato';
+.button-img {
+  width: 175px;
+  height: 50px;
+  font-family: "Lato";
+  font-size: 14px;
+  color: #ffffff;
+  background-color: transparent;
+  border-radius: 25px;
+  border: solid;
+  border-color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 165px;
+  margin-left: 40px;
 }
 
-.big_title_about_us {
-font-size: 30px;
-margin-left: 65px;
-margin-top: 10px;
-line-height: 1.4;
-font-family: 'Merriweather';
+/* <!-- SECOND SECTION --> */
+
+.container-our-cases {
+  width: 100%;
+  max-height: 1000px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 90px;
+
+  display: flex;
+  position: relative;
 }
 
-.text_about_us {
-text-align: left;
-margin-left: 65px;
-max-width: 450px;
-margin-top: 30px;
-line-height: 1.3;
-font-family: 'Lato';
+.wrapper-cases {
+  width: 87%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-left: 200px;
+  gap: 50px;
+  padding-top: 70px;
 }
 
-.our_cases {
-position: absolute;
-display: grid;
-grid-template-rows: 50% 50%; 
-grid-template-columns: 200px 200px;
-grid-auto-rows: minmax(50px, auto);
-grid-gap: 10px; 
-display: flex;
-justify-content: right;
-align-content: end;
+.small-title-about-us {
+  font-family: "Lato";
+  color: #bdbdbd;
+  font-size: 24px;
+  padding-bottom: 30px;
 }
 
-.case:hover {
-  background: #005FA3;
-  opacity: 90%;
-  }
-
-.case {
-background-color: rgb(220, 222, 219);
-background-repeat: repeat;
-background-size: cover;
-position: relative;
+.big-title-about-us {
+  font-family: "Merriweather";
+  color: #005fa3;
+  font-size: 48px;
+  padding-bottom: 30px;
+  line-height: 1.3em;
 }
 
-h4 {
-color: black;
-font-size: 35px;
-margin-top: 25px;
-margin-left: 20px;
-font-family: 'Lato';
+.big-title-about-us::first-line {
+  color: #333333;
 }
 
-.details_of_case {
-margin-bottom: 10px;
-padding-left: 20px;
-font-family: 'Lato';
-} 
-
-.text_container {
-display: flex;
-flex-direction: column;
+.text-about-us {
+  font-family: "Lato";
+  color: #000000;
+  text-align: left;
+  line-height: 1.5em;
 }
 
-.btn_about_us {
-bottom: 20px;
-padding: 5px;
-width: 150px;
-border: solid;
-border-radius: 20px;
-color: #005FA3;
-font-family: 'Lato';
+.wrapper-cases-items {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.case-item {
+  width: 255px;
+  height: 255px;
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-left: 30px;
+}
+
+.case-item:hover {
+  background: #005fa3;
+  opacity: 40%;
+}
+
+.title-case {
+  font-family: "Lato";
+  font-size: 55px;
+  color: #000000;
+}
+
+.text-case {
+  font-family: "Lato";
+  font-size: 14px;
+  color: #000000;
+}
+
+.button-case {
+  width: 175px;
+  height: 50px;
+  border-radius: 25px;
+  border: #005fa3 solid;
+  color: #005fa3;
 }
